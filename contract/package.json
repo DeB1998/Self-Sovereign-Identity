@@ -1,0 +1,33 @@
+{
+    "name": "master-degree-thesis-contract",
+    "version": "1.0.0",
+    "description": "Smart contract used in the Alessio De Biasi's Master Degree Thesis",
+    "main": "index.js",
+    "private": true,
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "build-typescript": "tsc -p ./tsconfig.json",
+        "console": "truffle console --network development",
+        "compile-all-contracts": "node ./build/scripts/compile-all-contracts.js",
+        "compile-deploy-contract": "node ./build/scripts/compile-and-deploy.js",
+        "deploy-compiled-contract": "node ./build/scripts/deploy-compiled-contract.js",
+        "debug": "truffle debug",
+        "generate-types": "node ./build/scripts/generate-types.js",
+        "init": "cd src && truffle init",
+        "networks": "cd src && truffle networks",
+        "test-contract": "node ./build/scripts/test-contract.js"
+    },
+    "author": "Alessio De Biasi",
+    "license": "ISC",
+    "devDependencies": {
+        "@typechain/truffle-v5": "^8.0.2",
+        "@types/bn.js": "^5.1.1",
+        "@types/node": "^18.15.11",
+        "@types/secp256k1": "^4.0.3",
+        "truffle": "^5.8.2",
+        "typechain": "^8.1.1",
+        "typescript": "^5.0.4"
+    }
+}
